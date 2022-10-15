@@ -1,0 +1,9 @@
+#1
+Вводится вектор. Вывести максимум из его элементов.
+
+vector=input()
+vector_list=[int(x) for x in vector.split()]
+print(max(vector_list))
+
+Значения на ввод: 12 43 5555 84578657 3 21 764 6
+Вывод: 84578657
