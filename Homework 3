@@ -45,12 +45,8 @@ print(objects_sum)
 #Ввод:-
 #Вывод:['igor@study.com', 'misha@rea.ru', 'nastay@study.com', 'olga@study.com', 'pasha@rea.ru']
 domens={'rea.ru': ['misha', 'pasha'], 'study.com': ['olga', 'nastay', 'igor']}
-i=0
 total_list=[]
 for dom, logins in domens.items():
-  i+=1
-  logins=str(logins)[1:len(str(logins))-1]
-  logins_list=logins.split(', ')
-  for k in range(len(logins_list)):
-    total_list.append(logins_list[k][1:len(logins_list[k])-1]+'@'+dom)
+  for k in logins:
+    total_list.append(k+'@'+dom)
 print(sorted(total_list))
